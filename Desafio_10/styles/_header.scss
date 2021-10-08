@@ -1,0 +1,111 @@
+header {
+  height: 350px;
+  width: 100%;
+  background-image: url("../assets/img/library.jpg");
+  @include bgImgSettings();
+  position: relative;
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 2rem;
+    height: 75px;
+    h1 {
+      a {
+        font-family: "Cinzel Decorative", cursive;
+        font-size: 2.5rem;
+      }
+    }
+    form {
+      display: flex;
+      height: 35px;
+      button {
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .nav-menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 1.5rem 0 1.5rem;
+
+    .icon-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+      &-bar {
+        background-color: white;
+        width: 30px;
+        height: 4px;
+        border-radius: 15px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 30px;
+          height: 4px;
+          border-radius: 15px;
+          background: white;
+          top: -0.5em;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 30px;
+          height: 4px;
+          border-radius: 15px;
+          background: white;
+          top: 0.5em;
+        }
+      }
+    }
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    // display: none;
+    &-show {
+      transform: translateX(0);
+      //   display: block;
+    }
+    &-item {
+      border-bottom: 1px solid white;
+      &:first-child {
+        border-top: 1px solid white;
+      }
+    }
+    &-link {
+      display: block;
+      padding: 1rem;
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+  .title-header {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.2rem;
+  }
+}
