@@ -74,7 +74,7 @@ const mostrarCarrito = () => {
   contenedorCarrito[0].innerHTML = "";
   if (carrito && carrito.length > 0) {
     for (let item of carrito) {
-      contenedorCarrito[0].innerHTML += `<p><i>Product in Cart:</i> <strong>${item.title} - $${item.price}</strong></p>`;
+      contenedorCarrito[0].innerHTML += `<li><i>Product in Cart:</i> <strong>${item.title} - $${item.price}</strong></li>`;
     }
   }
 };
@@ -223,4 +223,19 @@ $("#cart1").click(() => {
 });
 $("#cart1").dblclick(() => {
   $("footer").css("display", "none");
+});
+
+$("body").prepend(`<div>
+                        <button id='btnjq'>Light Mode</button>
+                        <button id='btnjqdark'>Dark Mode</button>
+                  </div>`);
+
+$("#btnjq").on("click", () => {
+  $("main").css("background", "white");
+  $("p").css("color", "black");
+});
+
+$("#btnjqdark").on("click", () => {
+  $("main").css("background", "black");
+  $("p").css("color", "white");
 });
