@@ -1,0 +1,82 @@
+// MEDIA Q
+//   xs: 320px  => Mobile
+//   sm: 480px  => Landscape Mobile
+//   md: 768px  => Tablet
+//   lg: 1024px => Landscape Tablet
+//   xl: 1200px => Laptop & PC
+
+@media only screen and (min-width: 320px) {
+  header {
+    input {
+      display: none;
+    }
+  }
+  main {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  header {
+    input {
+      display: block;
+    }
+    .menu {
+      img {
+        display: none;
+      }
+    }
+  }
+  main {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    .nav-menu {
+      display: none !important;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      transform: translateX(0);
+      img {
+        display: block;
+      }
+    }
+  }
+  main {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}

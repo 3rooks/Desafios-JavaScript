@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+header {
+  height: 350px;
+  width: 100%;
+  background-image: url("../assets/img/library.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 0 2rem;
+  height: 75px;
+}
+
+header .top-bar h1 a {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5rem;
+}
+
+header .top-bar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+}
+
+header .top-bar form button {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-menu {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+header .nav-menu .icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+header .nav-menu .icon-menu-bar {
+  background-color: white;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  position: relative;
+}
+
+header .nav-menu .icon-menu-bar::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background: white;
+  top: -0.5em;
+}
+
+header .nav-menu .icon-menu-bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background: white;
+  top: 0.5em;
+}
+
+header .menu {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+header .menu-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .menu-item {
+  border-bottom: 1px solid white;
+}
+
+header .menu-item:first-child {
+  border-top: 1px solid white;
+}
+
+header .menu-link {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .title-header {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+header #cart,
+header #cart1 {
+  cursor: pointer;
+}
+
+main {
+  background-color: #14181c;
+  padding: 1rem;
+}
+
+main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 10px;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  color: white;
+}
+
+main .container .img--1 {
+  background-image: url("../assets/img/once-upon-a-time-in-hollywood.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--2 {
+  background-image: url("../assets/img/a-clockwork-orange.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--3 {
+  background-image: url("../assets/img/lolita.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--4 {
+  background-image: url("../assets/img/the-tell-tale-heart.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--5 {
+  background-image: url("../assets/img/the-raven.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--6 {
+  background-image: url("../assets/img/the-murders-in-the-rue-morgue.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--7 {
+  background-image: url("../assets/img/the-black-cat.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--8 {
+  background-image: url("../assets/img/the-fall-of-the-house-of-usher.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--9 {
+  background-image: url("../assets/img/the-cast-of-amontillado.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container .img--10 {
+  background-image: url("../assets/img/berenice.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: none;
+  background-color: red;
+  border: 1px;
+}
+
+@media only screen and (min-width: 320px) {
+  header input {
+    display: none;
+  }
+  main .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  header input {
+    display: block;
+  }
+  header .menu img {
+    display: none;
+  }
+  main .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .nav-menu {
+    display: none !important;
+  }
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header .menu img {
+    display: block;
+  }
+  main .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main .container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main .container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=index.css.map */
